@@ -6,7 +6,7 @@ This script parse a sitemap and visit all url listed.
 HOW TO INSTALL
 ==============
 
-you must have git, python with setuptools and firefox.
+you must have git, python with setuptools, firefox and java.
 
 execute this command:
 
