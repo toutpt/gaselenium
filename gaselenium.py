@@ -6,7 +6,6 @@ import urllib
 import sys
 from xml.dom.minidom import parseString
 
-import pdb;pdb.set_trace()
 url = sys.argv[1]
 xml = urllib.urlopen(url).read()
 dom = parseString(xml)
