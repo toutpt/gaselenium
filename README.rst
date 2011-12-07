@@ -6,7 +6,7 @@ This script parse a sitemap and visit all url listed.
 HOW TO INSTALL
 ==============
 
-you must have git, python and firefox.
+you must have git, python with setuptools and firefox.
 
 execute this command:
 
@@ -16,5 +16,5 @@ execute this command:
     cd gaselenium
     python bootstrap.py
     bin/buildout
-    bin/python gaselenium.py
+    bin/python gaselenium.py http://monsite.com/sitemap.xml
 
