@@ -27,7 +27,7 @@ browser = webdriver.Firefox() # Get local session of firefox
 for keyword in keywords:
     query = BASE_QUERY
     query['q'] = keyword
-    url = GOOGLE_URL'%urllib.urlencode(query)
+    url = GOOGLE_URL%urllib.urlencode(query)
     browser.get(url)
     browser.find_element_by_name('btnK').click()
     time.sleep(1)
