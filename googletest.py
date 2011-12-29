@@ -6,6 +6,9 @@ import urllib
 import urlparse
 import sys
 
+GOOGLE_URL = "http://www.google.com/?%s"
+BASE_QUERY = {'q':None,'hl':'fr'}
+
 domain = sys.argv[1]
 keywords = open(sys.argv[2]).read().split('\n')
 
@@ -21,10 +24,10 @@ def check_domain(url):
     return False
 
 browser = webdriver.Firefox() # Get local session of firefox
-query = {'q':None,'hl':'fr'}
 for keyword in keywords:
+    query = BASE_QUERY
     query['q'] = keyword
-    url = 'http://www.google.fr/?%s'%urllib.urlencode(query)
+    url = GOOGLE_URL'%urllib.urlencode(query)
     browser.get(url)
     browser.find_element_by_name('btnK').click()
     time.sleep(1)
