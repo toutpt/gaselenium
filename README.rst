@@ -1,7 +1,7 @@
 INTRODUCTION
 ============
 
-This script parse a sitemap and visit all url listed.
+This project contains a set of scripts for SEO guys.
 
 HOW TO INSTALL
 ==============
@@ -18,6 +18,8 @@ execute this command::
 
 gaselenium.py script
 ====================
+
+This script parse a sitemap and visit all url listed.
 
     bin/python gaselenium.py http://monsite.com/sitemap.xml
 
