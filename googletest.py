@@ -32,6 +32,7 @@ for keyword in keywords:
     browser.find_element_by_name('btnK').click()
     time.sleep(1)
     results = browser.find_elements_by_class_name('l')
+
     for result in results:
         if check_domain(result.get_attribute('href')):
             result.click()

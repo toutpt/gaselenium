@@ -20,6 +20,7 @@ for keyword in keywords:
     browser.find_element_by_name('go').click()
     time.sleep(1)
     results = browser.find_elements_by_class_name('sb_tlst')
+
     for result in results:
         link = result.find_element_by_tag_name('a')
         rdomain = link.get_attribute('href')
@@ -27,6 +28,7 @@ for keyword in keywords:
             link.click()
             time.sleep(2)
             break
+
     time.sleep(2)
     browser.delete_all_cookies()
 
