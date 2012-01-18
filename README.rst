@@ -43,5 +43,10 @@ To execute it from inside this project, execute::
 bingtest script
 ===============
 
-Same as google test, but for bing. Thanks to `Thomas Simon <mailto:thomas.simon@inextcom.fr>`_ for this contribution.
+Same as googletest, but for bing. Thanks to `Thomas Simon <mailto:thomas.simon@inextcom.fr>`_ for this contribution.
+
+baidutest script
+================
+
+Same as googletest, but for baidu.
 
