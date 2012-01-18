@@ -1,10 +1,9 @@
-from selenium import webdriver
-from selenium.common.exceptions import NoSuchElementException
-from selenium.webdriver.common.keys import Keys
 import time
 import urllib
 import urlparse
 import sys
+
+from selenium import webdriver
 
 GOOGLE_URL = "http://www.google.com/?%s"
 BASE_QUERY = {'q':None,'hl':'fr'}
@@ -24,6 +23,7 @@ def check_domain(url):
     return False
 
 browser = webdriver.Firefox() # Get local session of firefox
+
 for keyword in keywords:
     query = BASE_QUERY
     query['q'] = keyword
@@ -39,4 +39,5 @@ for keyword in keywords:
             break
     time.sleep(2)
     browser.delete_all_cookies()
+
 browser.close()
