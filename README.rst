@@ -40,3 +40,8 @@ To execute it from inside this project, execute::
 
     bin/python googletest.py http://www.inextcom.fr /home/toutpt/tmp/inextcom.txt
 
+bingtest script
+===============
+
+Same as google test, but for bing. Thanks to `Thomas Simon <mailto:thomas.simon@inextcom.fr>`_ for this contribution.
+
